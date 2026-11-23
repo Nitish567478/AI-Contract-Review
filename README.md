@@ -9,8 +9,6 @@ Signed-in users can upload legal contracts in **PDF**, **DOCX**, or **TXT** form
 ## 🌐 Live Deployments
 
 - **Live Frontend (Vercel)**: **[https://ai-contract-review-jade.vercel.app](https://ai-contract-review-jade.vercel.app)**
-- **Live Backend API (Render)**: **[https://ai-contract-review-pwy5.onrender.com](https://ai-contract-review-pwy5.onrender.com)**
-- **API Health Check**: **[https://ai-contract-review-pwy5.onrender.com/api/health](https://ai-contract-review-pwy5.onrender.com/api/health)**
 
 ---
 
@@ -417,3 +415,4 @@ AI-Contract-Review/
 ├── .gitignore                  # Git ignore rules
 └── README.md                   # Comprehensive documentation
 ```
+**Thank You💖💖**
