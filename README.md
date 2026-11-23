@@ -9,8 +9,6 @@ Signed-in users can upload legal contracts in **PDF**, **DOCX**, or **TXT** form
 ## 🌐 Live Deployments
 
 - **Frontend (Vercel)**: **[https://ai-contract-review-jade.vercel.app](https://ai-contract-review-jade.vercel.app)**
-- **Backend API (Render)**: **[https://ai-contract-review-pwy5.onrender.com](https://ai-contract-review-pwy5.onrender.com)**
-- **API Health Check**: **[https://ai-contract-review-pwy5.onrender.com/api/health](https://ai-contract-review-pwy5.onrender.com/api/health)**
 
 ---
 
@@ -114,7 +112,7 @@ MONGODB_URI=mongodb://localhost:27017/contract_review
 CLERK_SECRET_KEY=sk_test_...
 CLERK_PUBLISHABLE_KEY=pk_test_...
 VITE_CLERK_PUBLISHABLE_KEY=pk_test_...
-VITE_API_URL=https://ai-contract-review-pwy5.onrender.com/api
+VITE_API_URL=https://localhost:5000/api
 
 # Google Gemini API Key (free from https://aistudio.google.com)
 GEMINI_API_KEY=AIzaSy...
@@ -159,7 +157,7 @@ npm run dev
 ```
 
 The backend starts on **[http://localhost:5000](http://localhost:5000)** (or live on Render: **[https://ai-contract-review-pwy5.onrender.com](https://ai-contract-review-pwy5.onrender.com)**).
-- **Health Check**: [https://ai-contract-review-pwy5.onrender.com/api/health](https://ai-contract-review-pwy5.onrender.com/api/health) (or local: [http://localhost:5000/api/health](http://localhost:5000/api/health))
+- **Health Check**: [http://localhost:5000/api/health](https://localhost:5000/api/health) (or local: [http://localhost:5000/api/health](http://localhost:5000/api/health))
 
 ---
 
@@ -315,3 +313,6 @@ contract-review-ai/
 ├── README.md                   # Complete local setup and architecture documentation
 └── spec.md                     # Single source of truth product & technical specification
 ```
+
+
+****Thank You💖💖**
