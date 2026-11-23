@@ -10,16 +10,28 @@ server/node_modules/
 
 client/dist/
 
+uploads/
+server/uploads/
+uploads
 uploads/*
 server/uploads/*
-!uploads/.gitkeep
-!server/uploads/.gitkeep
 *.pdf
 *.docx
 
 data/
 server/data/
+data
 *.wt
+
+sample_contracts/
+sample_contracts
+
+docker-compose.yml
+spec.md
+
+package-lock.json
+client/package-lock.json
+server/package-lock.json
 
 *.log
 

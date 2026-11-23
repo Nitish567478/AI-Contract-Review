@@ -6,6 +6,14 @@ Signed-in users can upload legal contracts in **PDF**, **DOCX**, or **TXT** form
 
 ---
 
+## 🌐 Live Deployments
+
+- **Frontend (Vercel)**: **[https://ai-contract-review-jade.vercel.app](https://ai-contract-review-jade.vercel.app)**
+- **Backend API (Render)**: **[https://ai-contract-review-pwy5.onrender.com](https://ai-contract-review-pwy5.onrender.com)**
+- **API Health Check**: **[https://ai-contract-review-pwy5.onrender.com/api/health](https://ai-contract-review-pwy5.onrender.com/api/health)**
+
+---
+
 ## 🌟 Key Capabilities & Requirements Implemented
 
 ### 1. Mandatory User Ownership & Security (Clerk)
@@ -174,6 +182,16 @@ If you have Docker installed, you can start MongoDB and the server with a single
 docker-compose up --build
 ```
 This spins up MongoDB on port `27017` and the Express server on port `5000`.
+
+---
+
+### Step 7: Deploying Frontend to Vercel
+1. Import the repository into **[Vercel](https://vercel.com)**.
+2. If prompted for **Root Directory**, you can leave it default or choose `./client`.
+3. Add the following **Environment Variables** in Vercel project settings:
+   - `VITE_CLERK_PUBLISHABLE_KEY`: Your Clerk publishable key (`pk_test_...` or `pk_live_...`).
+   - `VITE_API_URL`: Your Render backend API URL (`https://ai-contract-review-pwy5.onrender.com/api`).
+4. Vercel automatically uses `vercel.json` to handle all client-side SPA routing (`/(.*) -> /index.html`) so sub-routes like `/sign-in/factor-one` and `/dashboard` resolve seamlessly without 404 errors.
 
 ---
 
