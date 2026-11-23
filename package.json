@@ -1,0 +1,12 @@
+{
+  "name": "contract-review-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "test": "node --test tests/quote_verifier.test.js tests/isolation.test.js tests/api_contracts.test.js"
+  }
+}
