@@ -106,7 +106,7 @@ MONGODB_URI=mongodb://localhost:27017/contract_review
 CLERK_SECRET_KEY=sk_test_...
 CLERK_PUBLISHABLE_KEY=pk_test_...
 VITE_CLERK_PUBLISHABLE_KEY=pk_test_...
-VITE_API_URL=http://localhost:5000/api
+VITE_API_URL=https://ai-contract-review-pwy5.onrender.com/api
 
 # Google Gemini API Key (free from https://aistudio.google.com)
 GEMINI_API_KEY=AIzaSy...
@@ -150,8 +150,8 @@ cd server
 npm run dev
 ```
 
-The backend starts on **[http://localhost:5000](http://localhost:5000)**.
-- **Health Check**: [http://localhost:5000/api/health](http://localhost:5000/api/health)
+The backend starts on **[http://localhost:5000](http://localhost:5000)** (or live on Render: **[https://ai-contract-review-pwy5.onrender.com](https://ai-contract-review-pwy5.onrender.com)**).
+- **Health Check**: [https://ai-contract-review-pwy5.onrender.com/api/health](https://ai-contract-review-pwy5.onrender.com/api/health) (or local: [http://localhost:5000/api/health](http://localhost:5000/api/health))
 
 ---
 

@@ -12,8 +12,15 @@ const app = express();
 app.use(
   cors({
     origin: (origin, callback) => {
-
-      if (!origin || origin.includes('localhost') || origin.includes('127.0.0.1') || origin === config.clientUrl) {
+      if (
+        !origin ||
+        origin.includes('localhost') ||
+        origin.includes('127.0.0.1') ||
+        origin === config.clientUrl ||
+        origin.includes('onrender.com') ||
+        origin.includes('vercel.app') ||
+        origin.includes('netlify.app')
+      ) {
         callback(null, true);
       } else {
         callback(new Error('Blocked by CORS policy'));
